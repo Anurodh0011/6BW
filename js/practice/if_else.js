@@ -1,44 +1,4 @@
-// ------------------------------->         Password Validation             <-----------------------------------
-// Write a program that checks if a given password meets certain criteria:
-// Must be at least 8 characters long.
-// Must contain at least one digit.
-// Must contain at least one special character (e.g., !, @, #).
-// Example Input: Password1!
-// Output: Password is valid.
 
-let validateDigit = () => {
-    let isValid = false
-    for (let i = 0; i < pass.length; i++) {
-        if (Number(pass[i]) >= 0 && Number(pass[i]) <= 9) {
-            isValid = true
-        }
-    }
-    return isValid
-}
-let validateSpecialCharacter = () => {
-    let isValid = false
-    for (let i = 0; i < pass.length; i++) {
-        if (!((pass[i] > 'A' && pass[i] < 'Z') || (pass[i] > 'a' && pass[i] < 'z') || (Number(pass[i] >= 0) && Number(pass[i]) <= 9))) {
-            isValid = true
-        }
-    }
-    return isValid
-}
-let validateUpper = () => {
-    let isValid = false
-    for (let i = 0; i < pass.length; i++) {
-        if (pass[i] >= 'A' && pass[i] <= 'Z') {
-            isValid = true
-        }
-    }
-    return isValid
-}
-let pass = 'anasDasau1'
-if (pass.length >= 8 && validateDigit() && validateSpecialCharacter() && validateUpper()) {
-    console.log("valid")
-} else {
-    console.log("Not valid")
-}
 
 // 1. Write a program that takes a number as input and checks if the number is positive, negative, or zero.
 // let num = -7
@@ -49,12 +9,10 @@ if (pass.length >= 8 && validateDigit() && validateSpecialCharacter() && validat
 // let num = -20
 // console.log(num % 2 === 0 ? "Even" : "Odd")
 
-
 // 3. Vowel or Consonant
 // Write a program that checks whether a given character is a vowel or a consonant.
 // let char = "b"
 // console.log((char === "a" || char === "e" || char === "i" || char === "o" || char === "u") ? "Vowel" : "Consonent")
-
 
 // 4. Age Category
 // Write a program that checks the age of a person and categorizes them as:
@@ -63,6 +21,7 @@ if (pass.length >= 8 && validateDigit() && validateSpecialCharacter() && validat
 // Above 65: Senior
 // let age = 1
 // console.log((age > 0 && age < 120) ? (age < 18 ? "Minor" : age >= 65 ? "Senior" : Adult) : "Please enter valid age.")
+
 
 
 // 5. ---------------------------->   Divisibility Check
@@ -82,6 +41,9 @@ if (pass.length >= 8 && validateDigit() && validateSpecialCharacter() && validat
 //     console.log("Not divisible by both.")
 // }
 
+
+
+
 // ------------------------>   6. Leap Year Check
 // Write a program that checks whether a given year is a leap year. A year is a leap year if:
 // It is divisible by 4, but not divisible by 100, or
@@ -97,3 +59,40 @@ if (pass.length >= 8 && validateDigit() && validateSpecialCharacter() && validat
 // console.log((a > b && a > c) ? "a is greater." : (b > a && b > c) ? "b is greater." : (c > a && c > b) ? "c is greater." : (a === b && b === c) ? "a, b, and c are equal." : "")
 
 
+
+// 10. Check Grade with Bonus
+// Write a program that calculates the final grade by checking if the student received a bonus.
+// If the student scores above 80, they get a 5% bonus to their original grade.
+// let grade = 85
+// if (grade > 80) {
+//     grade = grade + grade * 0.05
+//     console.log(`Grade: ${grade}`)
+// } else {
+//     console.log(`Grade: ${grade}`)
+// }
+
+
+
+// Write a program that compares two strings and checks if they are equal, and prints a suitable message.
+// Example Input: "apple", "apple"
+// Output: The strings are equal.
+let str1 = 'fff'
+let str2 = 'fffg'
+let isSame = true
+if (str1.length !== str2.length) {
+    isSame = false
+}
+else {
+    for (let i = 0; i < str1.length; i++) {
+        if (str1[i] !== str2[i]) {
+            isSame = false
+            break
+        }
+    }
+}
+
+if (isSame) {
+    console.log("All characters matched.")
+} else {
+    console.log("Not matched.")
+}
