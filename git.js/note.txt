@@ -1,0 +1,6 @@
+git init
+git remote add origin <url>
+
+
+c. Global config
+- git config user.name = 
