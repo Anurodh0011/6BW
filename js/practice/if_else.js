@@ -59,7 +59,6 @@
 // console.log((a > b && a > c) ? "a is greater." : (b > a && b > c) ? "b is greater." : (c > a && c > b) ? "c is greater." : (a === b && b === c) ? "a, b, and c are equal." : "")
 
 
-
 // 10. Check Grade with Bonus
 // Write a program that calculates the final grade by checking if the student received a bonus.
 // If the student scores above 80, they get a 5% bonus to their original grade.
@@ -70,7 +69,6 @@
 // } else {
 //     console.log(`Grade: ${grade}`)
 // }
-
 
 
 // Write a program that compares two strings and checks if they are equal, and prints a suitable message.
